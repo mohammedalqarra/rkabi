@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View, Dimensions, Image } from "react-native";
 import React from "react";
 import { Button } from "native-base";
+import Animated from "react-native-reanimated";
+import { TapGestureHandler, State } from "react-native-gesture-handler";
 const { width, height } = Dimensions.get("window");
 const Home = () => {
   return (
