@@ -1,32 +1,24 @@
-import { StyleSheet, Text, View, Dimensions, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
-import { Button } from "native-base";
-import Animated from "react-native-reanimated";
-import { TapGestureHandler, State } from "react-native-gesture-handler";
 const { width, height } = Dimensions.get("window");
 const Home = () => {
   return (
     <View style={styles.container}>
-      <View style={{ ...StyleSheet.absoluteFill }}>
+      <View>
         <Image
           source={require("../assets/bg.jpg")}
-          alt="Alternate Text"
-          style={{}}
-        />
-      </View>
-      <View style={styles.continer2}>
-        <Button width={300} onPress={() => console.warn("hello world")}>
-          Click Me
-        </Button>
-        <View
           style={{
-            marginTop: 10,
+            height: height / 1.2,
+            width: width,
           }}
-        >
-          <Button width={300} onPress={() => console.warn("hello world")}>
-            Click Me 2
-          </Button>
-        </View>
+        />
       </View>
     </View>
   );
@@ -35,10 +27,8 @@ const Home = () => {
 export default Home;
 
 const styles = StyleSheet.create({
-  container: {},
-  continer2: {
-    height: height * 1.5,
-    justifyContent: "center",
-    alignItems: "center",
+  container: {
+    flex: 1,
+    backgroundColor: "white",
   },
 });

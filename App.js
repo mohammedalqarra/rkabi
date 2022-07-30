@@ -1,8 +1,9 @@
-import { StatusBar } from "expo-status-bar";
+import "react-native-gesture-handler";
 import { StyleSheet, Text, View } from "react-native";
-import { NativeBaseProvider } from "native-base";
-// start importing paths
+import { NativeBaseProvider, Box } from "native-base";
+
 import Home from "./src/Home";
+
 export default function App() {
   return (
     <NativeBaseProvider>
@@ -14,5 +15,10 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
 });
