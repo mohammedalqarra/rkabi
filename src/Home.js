@@ -14,7 +14,7 @@ const Home = () => {
   const changeHeight = () => {
     Animated.timing(marginTop, {
       toValue: 100,
-      duration: 2000,
+      duration: 5000,
       useNativeDriver: false,
     }).start();
   };
